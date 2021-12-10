@@ -6,7 +6,7 @@
   --lightGreen:  #BEE3DB;
   --darkGreen:   #527A78;
   --white:       #FAF9F9;
-  --black:       #23262E;
+  --darkGray:     #121212;
   --blueGray:    #555B6E;
   --romanSilver: #757E95;
 }
@@ -23,23 +23,27 @@
   --navBg:          var(--lightGreen);
   --navLinkHoverBg: var(--white);
   --mainBg:         var(--white);
-  --fontColor:      var(--black);
+  --fontColor:      var(--darkGray);
   --navLinkColor:   var(--lightCoral);
   --formBG:         var(--lightCoral);
   --formInput:      var(--romanSilver);
 }
 
 .dark-theme {
-  --navBg:          var(--darkGreen);
-  --navLinkHoverBg: var(--black);
-  --mainBg:         var(--black);
-  --fontColor:      var(--white);
-  --navLinkColor:   var(--blueGray);
-  --formBG:         var(--lightCoral);
-  --formInput:      var(--white);
+  --yellow: #F9C74F;
+  --lightCoral: #392b48;
+  --apricot: #f2564fff;
+  --lightGreen: #0a0a0aff;
+  --darkGreen: #307a73;
+  --white: #1C1B2D;
+  --darkGray: #faa549ff;
+  --blueGray: #060914;
+  --romanSilver: #182649;
+  --font-color:  #b7d0f1ff;
 }
 
 /* toggle styles begin */
+
 .toggle {
   appearance: none;
   width: 62px;
@@ -51,7 +55,7 @@
   outline: none;
   border: none;
   cursor: pointer;
-  background-color: var(--black);
+  background-color: var(--darkGray);
   transition: background-color ease 0.3s;
 }
 
@@ -198,44 +202,25 @@ input[type=text]:focus {
  color: var(--white);
 }
 
-@media (max-width: 601px) {
-  nav {
-      padding: 5%;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      background: var(--accents);
-      position: sticky;
-      top: 0;
-  }
-  button {
-      margin: 1%;
-  }
-}
-
-@media (min-width: 600px) {
-  main {
-      padding: 5%;
-  }
+/* Responsive */
+@media (max-width: 600px) {
   body {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      max-width: 100%;
   }
   nav {
-      min-height: 100vh;
-      padding-right: 5%;
-      position: sticky;
-      top: 0;
-      display: flex;
-      align-items: flex-start;
-      flex-direction: column;
-      justify-content: flex-start;
-      background: var(--accents);
-      min-width: 10%;
+    min-height: 100vh;
+    padding-right: 5%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
   }
-  button {
-      flex-grow: .1;
-      margin: 13%;
-      width: 5em;
+  form {
+      display: flex;
+      flex-direction: column;
   }
 }
