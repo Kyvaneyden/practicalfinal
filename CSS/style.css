@@ -1,14 +1,16 @@
 :root {
   --navHeight:   80px;
-  --yellow:      #F9C74F;
-  --lightCoral:  #EF6E6B;
-  --apricot:     #FFD6BA;
-  --lightGreen:  #BEE3DB;
-  --darkGreen:   #527A78;
-  --white:       #FAF9F9;
+  --yellow:      #fed053;
+  --lightCoral:  #fa8471;
+  --lightTan:     #ffd6ba;
+  --lightOrange:  #fd8f52;
+  --lightTangerine:   #ffdca2;
+  --white:       #fff9ef;
   --darkGray:     #121212;
-  --blueGray:    #555B6E;
-  --romanSilver: #757E95;
+  --blueGray:    #555b6e;
+  --romanSilver: #757e95;
+  --darkPink: #c73866;
+  --lightCream: #ffdca2;
 }
 
 * {
@@ -20,26 +22,26 @@
 
 /* notice how the default light theme colors are set by this class. */
 .light-theme {
-  --navBg:          var(--lightGreen);
+  --navBg:          var(--lightOrange);
   --navLinkHoverBg: var(--white);
   --mainBg:         var(--white);
-  --fontColor:      var(--darkGray);
-  --navLinkColor:   var(--lightCoral);
+  --fontColor:      var(--darkPink);
+  --navLinkColor:   var(--lightCream);
   --formBG:         var(--lightCoral);
   --formInput:      var(--romanSilver);
 }
 
 .dark-theme {
-  --yellow: #F9C74F;
-  --lightCoral: #392b48;
-  --apricot: #f2564fff;
-  --lightGreen: #0a0a0aff;
-  --darkGreen: #307a73;
-  --white: #1C1B2D;
-  --darkGray: #faa549ff;
+  --yellow: #fed053;
+  --lightCoral: #505050ff;
+  --lightTan: #f2564fff;
+  --lightOrange: #0a0a0aff;
+  --lightTangerine: #fe6973;
+  --white: #1a181aff;
+  --darkGray: #f2564fff;
   --blueGray: #060914;
   --romanSilver: #182649;
-  --font-color:  #b7d0f1ff;
+  --font-color:  #db1049;
 }
 
 /* toggle styles begin */
@@ -198,7 +200,7 @@ input[type=text]:focus {
 }
 
 .contact button {
- background: var(--darkGreen);
+ background: var(--lightTangerine);
  color: var(--white);
 }
 
